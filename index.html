@@ -8,9 +8,303 @@
 
     <!-- Custom CSS --> 
     <link rel="stylesheet" href="./css/index.css">
+
+
+    <!-- Link to google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Link to the font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--   Navbar   -->
+     <nav class="nav-bar">
+        <div class="nav-bar-content">
+            <a href="#" class="page_name">devjobs</a>
+            <div class="theme">
+                <a href="#" class="light-mode material-symbols-outlined">
+                    light_mode
+                </a>
+                <a href="#" class="theme-switch">
+                    <div class="small-circle ">
+
+                    </div>
+                </a>
+                <a href="#" class="dark-mode material-symbols-outlined">
+                    dark_mode
+                </a>
+            </div>
+        </div>
+        <div class="search-bar search-bar-light theme-toggle">
+            <div class="search border-theme border-theme-light">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADbElEQVR4nO1ZS2tTQRQeNz6wCiKibq2oWzeCi7Zq6S9w6QNRKC34HyK66EOq3plrIXNuiakI0mUb+tjqwvdSWzduXNW2kN4zaW0Vr5ykYjOTpmnvTJJqPhgogXxnvp45zzDWQAP1hwdJdZxLdYtLHOaAH7hU8xxwtXDUnAB8LwDTXqBu+il1jNUbBOAFITHDJf4UoKLKDv7ggGN+ELbW+v7Mh+xJDjhZ+eU3FDXuJbPNNRHBpbouJKr4IgqHg0IOeLWqIoTEuxteSKpPQmKPH2D7w2Dx9P3haD8dngzP0GccsFeAmi7jnTvVEQF4r+QFJL7xArxYMU+wdJ6DelkTMZyekylgRUCuM4qiXVvlo+8ImesqcBTzehKvOAtsPSby6VWGLbG5g7BVSLWgx8zg0PIJZhtGdpK4YkPEH3jJsI3qjWYjw6zXCeMd5zrtez3sNpNH2GIzS2WK3Y6vtxMTm4E4OeBbzSuj1toOqsJFgZgM25gjUObTO4BHgEdjE1PvVPwfUh+ZYwipZrSkciM2KTWAmqt7mGMIiX3FQvBJbFLqYteTUnVmjiEAOzQh72KTUq0o9sjiKeYY1Npoz/lbbFK96vr+bBNzDLKhBfx360L6grkDzDG8p/MH9SrP/omnBfglNmlhPK1tsAvAVzZI01pV77Vy2/I2+7VW5bH9gghq2spty9kE9bnIZjK8HJuUth16i0JNpJUbl7IXYLsx76QXD1shp22HPg26ahr1mBSAaWsG8oOPMRnmuphlcMDbxqQYqLNWjdDKRgv6VZs7Kep69cGKS/XMFv9fQ8lsMxUmrXVYsNHSFxZ8xqg75w2FR5gL0N7JmODIMxB2b3f5QM/JGHEL50ViJNrNXIFWNSWM5jtULvHS1rKTHtjGWmg8lYr2Vl3M2nObKcwT2JFfyvmzTXTo70LFxn6jTpQ7Ekedeob2TkbMODoccMzzoj3OxNDeSV9MbPmSEn8JqUaExKmaiiHQyoaegNkBlBWwLKR6ziF3jjgoFrjEiU2eWca5GAJtO2hRQDN2Pvjpx538PINLAvDr2qrnsR+oa4OD2UP69+tKTFxQYBstERjenHCazaoqBnCyIabaSPxvnhESpwYGon2s3pGqIJtV/fdHF57hUiXYTkKihJgdJ6KUmB0rYn3MOPuxtIEGWFn8BmrB9hWycD+NAAAAAElFTkSuQmCC">
+                <input type="search" name="search" id="search" placeholder="Filter by title,company, expertise.." class="theme-toggle search-bar-light">
+            </div>
+
+            <div class="filter_fulltime">
+                <div class="location-filter border-theme border-theme-light ">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADI0lEQVR4nO2Zy2sUQRCHyxdRfCCiRDEgiIKgoCeNf4A30ZuPk2fBkwoePCxKEEViMt2D61RvWNCTAT14Ey+Kr0REL4JeFQnGREy2aqLGx0jNGgzkQU/SPTsr/qBg2Wm655t6dNcMwH9N1aXK0EqFdFQbQmXomUb+qAyNi8lvjdQv13RER2QsFE1XIt6gDJWVoVgbTmxMxiokE5qRLY2+fwiCpEUjnddIbAswDZB47KLMBY1QFNXWKuQHcwWYAoT0JKzy+lwhuiu0QyG9cwXx1+itzJ0PhKFWPxCTYAy1eoWoVpOlEgL+IHgC5rHXnEkT2zsET+TMBW8ldj7VKbMhfbva82WzcxDZJ3KDMH+8YihyChGGgyuUYcobRCOxrO0MpH7syJSsXzVyEEbxnsvXk+Vi8lsZVum1DHOFSIecgaTnI/tweK96eOdMc4XIu2RMBq9ccwaSHgAtPTEbxGQYW88oQ30OQXjI7ulxYDunRtZ2IDzoDERKod2i8W7bOQOM2229DM5ALMMgS4WRsZYgY+5AkD+4BgluDK+yBBlwB2L4daNCSxl+5Q4E6Y7losp1smvkW85A5ABnm5hSWq3Kr20BQTrnDER21ywb4mwwmTfEKD7gDCToqa3Thn5aLy5PG1lLHkgBSCtUZWxvGk6WntB1D3+XogAupQy9tL8BN6YMP4Rmbqr0hFX4tHMQFdW25eoNpF9hZWwT+JBGepEjzH3wpdDUjueXH3TYH0i9UxzxD0IDUZQsAZ9Shrty8MhZ8K0A47as7WomQx7tqn5eDXlI2k9vuYHUAXmpXI43ennHhfyp04ysgTwlhznn3jB0AvJWZ2eyzOnLbOQ33ivVTNKGjzkE2Q+NUqmULNSGnjsAuQeNVljvL8bnkRdxd3l0KxRByrqDnC6k6CQURUGQtMhLgjlA9Pf2JougSAowbldIP+xBpL+n7VBEKaSODLlxCoqqUilZrJEfWYTUXal4UGQFGLcp5OGZPcGD8hkPmkEhxgelVZ0CkeYQ7YNmkkIuTbN7n4FmU5IkC5Thm5OS+7b8B82oMG2NqU8beur0oyb8w/oNmaRg9KcfJ5sAAAAASUVORK5CYII=">
+                    <input type="search" name="location" id="location" placeholder="Filter by location...." class="theme-toggle search-bar-light">
+                    <a href="#" class="material-symbols-outlined filterIcon">
+                        filter_alt
+                    </a>
+                </div>
+                <div class="full-time">
+                    <div>
+                        <a href="#" class="material-symbols-outlined check">
+                            check
+                        </a>
+                        <input type="checkbox" id="full-time" name="full-time" value="full-time">
+                        <label for="full-time">
+                            Full Time Only
+                        </label>
+                    </div>
+                    <button class="search-btn">
+                        <span class="text">Search</span>
+                        <span class="material-symbols-outlined icon">
+                            search
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+<!--   /Navbar   -->
+<!-- Overlay -->
+<a href="#" class="overlay">
+
+</a>
+<!-- Pop-up on mobile devices when the filter button is clicked -->
+<section class="filter-popUp">
+  <div class="popup-loc">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADI0lEQVR4nO2Zy2sUQRCHyxdRfCCiRDEgiIKgoCeNf4A30ZuPk2fBkwoePCxKEEViMt2D61RvWNCTAT14Ey+Kr0REL4JeFQnGREy2aqLGx0jNGgzkQU/SPTsr/qBg2Wm655t6dNcMwH9N1aXK0EqFdFQbQmXomUb+qAyNi8lvjdQv13RER2QsFE1XIt6gDJWVoVgbTmxMxiokE5qRLY2+fwiCpEUjnddIbAswDZB47KLMBY1QFNXWKuQHcwWYAoT0JKzy+lwhuiu0QyG9cwXx1+itzJ0PhKFWPxCTYAy1eoWoVpOlEgL+IHgC5rHXnEkT2zsET+TMBW8ldj7VKbMhfbva82WzcxDZJ3KDMH+8YihyChGGgyuUYcobRCOxrO0MpH7syJSsXzVyEEbxnsvXk+Vi8lsZVum1DHOFSIecgaTnI/tweK96eOdMc4XIu2RMBq9ccwaSHgAtPTEbxGQYW88oQ30OQXjI7ulxYDunRtZ2IDzoDERKod2i8W7bOQOM2229DM5ALMMgS4WRsZYgY+5AkD+4BgluDK+yBBlwB2L4daNCSxl+5Q4E6Y7losp1smvkW85A5ABnm5hSWq3Kr20BQTrnDER21ywb4mwwmTfEKD7gDCToqa3Thn5aLy5PG1lLHkgBSCtUZWxvGk6WntB1D3+XogAupQy9tL8BN6YMP4Rmbqr0hFX4tHMQFdW25eoNpF9hZWwT+JBGepEjzH3wpdDUjueXH3TYH0i9UxzxD0IDUZQsAZ9Shrty8MhZ8K0A47as7WomQx7tqn5eDXlI2k9vuYHUAXmpXI43ennHhfyp04ysgTwlhznn3jB0AvJWZ2eyzOnLbOQ33ivVTNKGjzkE2Q+NUqmULNSGnjsAuQeNVljvL8bnkRdxd3l0KxRByrqDnC6k6CQURUGQtMhLgjlA9Pf2JougSAowbldIP+xBpL+n7VBEKaSODLlxCoqqUilZrJEfWYTUXal4UGQFGLcp5OGZPcGD8hkPmkEhxgelVZ0CkeYQ7YNmkkIuTbN7n4FmU5IkC5Thm5OS+7b8B82oMG2NqU8beur0oyb8w/oNmaRg9KcfJ5sAAAAASUVORK5CYII=">
+    <input type="search" name="location" id="popUplocation" placeholder="Filter by location...." class="theme-toggle search-bar-light">    
+  </div>
+  <div class="popup-fullTme">
+    <input type="checkbox" name="full-time" value="full-time">
+    <label for="full-time-popup" class="full-time-popup">
+        Full Time Only
+    </label>
+  </div>
+  <button class="search-btn">
+      Search
+  </button>
+</section>
+
+    <!--   /Content container   -->
+    <a href="./info.html"><div class="content-container">
+      <div class="cards-container">
+        <div class="card-container">
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>5h ago</span>
+              <span>.</span>
+              <span>Full Time</span>
+            </div>
+            <div class="job-type"><span>Senior Software Engineer</span></div>
+            <div class="uploader"><span>Scoot</span></div>
+            <div class="location"><span>United Kingdom</span></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>20h ago</span>
+              <span>.</span>
+              <span>Part Time</span>
+            </div>
+            <div class="job-type"><span>Haskell and PurScript Dev</span></div>
+            <div class="uploader"><span>Blogr</span></div>
+            <div class="location"><span>United States</span></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR14N5I12Gc-0eyry5lkp9EFZ2WOLH0VoHFFQ&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>1d ago</span>
+              <span>.</span>
+              <span>Part Time</span>
+            </div>
+            <div class="job-type"><span>Midelevel Back End Engineer</span></div>
+            <div class="uploader"><span>Vector</span></div>
+            <div class="location"><span>Russia</span></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhtkI2FksV-epYr-ojHwLSeC95ylIe5qMdg&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>2d ago</span>
+              <span>.</span>
+              <span>Full Time</span>
+            </div>
+            <div class="job-type"><span>Senior Application Engineer</span></div>
+            <div class="uploader"><span>Office Lite</span></div>
+            <div class="location"><span>Japan</span></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmLLDtKX75LPZXSjI6GqKa0uPGk2_0aEGaA&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>2d ago</span>
+              <span>.</span>
+              <span>Part Time</span>
+            </div>
+            <div class="job-type"><span>Remote DevOps Engineer</span></div>
+            <div class="uploader"><span>Pod</span></div>
+            <div class="location"><span>Japan</span></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLLBQyZFQkzkJslSe7wgIqJ9kr7mXWOBHUhQ&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>4h ago</span>
+              <span>.</span>
+              <span>Part Time</span>
+            </div>
+            <div class="job-type"><span>Desktop Support Manager</span></div>
+            <div class="uploader"><span>Creative</span></div>
+            <div class="location"><span>Germany</span></div>
+          </div>
+        </div>
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbXfI8q7CUYUrLSvfIeDhr8jhVVlzhwtfCg&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>1w ago</span>
+              <span>.</span>
+              <span>Full Time</span>
+            </div>
+            <div class="job-type"><span>iOS Engineer</span></div>
+            <div class="uploader"><span>Pomodoro</span></div>
+            <div class="location"><span>United States</span></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMpN0rUTjnNIz-pq-dJXiivSGPSTKkpLomow&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>1w ago</span>
+              <span>.</span>
+              <span>Full Time</span>
+            </div>
+            <div class="job-type"><span>Senior EJB Developer</span></div>
+            <div class="uploader"><span>Maker</span></div>
+            <div class="location"><span>United Kingdom</span></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gOEJJ6jO6Zs0n27LofZw_qmwZ-5BZiLRiw&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>1w ago</span>
+              <span>.</span>
+              <span>Part Time</span>
+            </div>
+            <div class="job-type"><span>Senior Frontend Developer</span></div>
+            <div class="uploader"><span>Coffeeroasters</span></div>
+            <div class="location"><span>Singapore</span></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVYtgqEk4zFf3U5zXKwEOGVnb_SC1PxRYzrA&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>2w ago</span>
+              <span>.</span>
+              <span>Freelance</span>
+            </div>
+            <div class="job-type"><span>App & Website Designer</span></div>
+            <div class="uploader"><span>Mastercraft</span></div>
+            <div class="location"><span>United States</span></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqH0WZDRFzSuKM-uynvm29d-2A40-IGzB5w&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>1mo ago</span>
+              <span>.</span>
+              <span>Part Time</span>
+            </div>
+            <div class="job-type"><span>Fullstack Developer</span></div>
+            <div class="uploader"><span>Crowdfund</span></div>
+            <div class="location"><span>New Zealand</span></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGeOEOP_I1J_RYXZ_zFSKxIbnFk83hi9BRiw&usqp=CAU"
+            alt=""
+          />
+          <div class="info">
+            <div class="time-container">
+              <span>4h ago</span>
+              <span>.</span>
+              <span>Part Time</span>
+            </div>
+            <div class="job-type"><span>Technical Lead Engineer</span></div>
+            <div class="uploader"><span>Typemaster</span></div>
+            <div class="location"><span>United Kingdom</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-btn">
+        <button>Load More</button>
+      </div>
+    </div>
+  </a>
+  
     <!-- CUSTOM Script --> 
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js"></script> 
 </body>
 </html>
+

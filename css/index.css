@@ -742,7 +742,7 @@
   }
   
   .load-btn button:hover {
-    background-color: var(--light-violet);
+    background-color:#525dd8c4;
   }
   @media screen and (max-width: 820px) {
     .cards-container {

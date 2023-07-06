@@ -15,15 +15,12 @@ theme_switch.addEventListener("click", (e) => {
     document.body.style.backgroundColor = "var(--midnight)";
 
     // Changing the color of the header to midnight when the theme switch button is clicked
-    document.querySelector('header').style.backgroundColor = "var(--very-dark-blue)";
+    document.querySelector('.main').style.backgroundColor = "var(--very-dark-blue)";
 
-    document.querySelector('.company-info-container .company-name ').style.color = "white";
 
-    document.querySelector('.company-site').style.color = "white";
-    document.querySelector('.company-site').style.backgroundColor = "var(--gray)";
-
-    document.querySelector('.document').style.backgroundColor = "var(--very-dark-blue)";
-    document.querySelector('.document').style.color = "white";
+    // Change .main background color
+    document.querySelector('.main').style.backgroundColor = "var(--very-dark-blue)";
+    document.querySelector('.main').style.color = "white";
 
     document.querySelector('.time-info').style.color = "var(--gray)";
 
@@ -41,6 +38,7 @@ theme_switch.addEventListener("click", (e) => {
     themeState = 2;
   } else {
     // Changing the background of the search bar in light mode
+    // alert("Another mode")
     theme_switch.style.margin = "0 0.2rem";
     themeToggle.forEach((element) => {
       element.classList.replace("search-bar-dark", "search-bar-light");
@@ -49,15 +47,10 @@ theme_switch.addEventListener("click", (e) => {
     document.body.style.backgroundColor = "var(--light-grey)";
 
     // Changing the color of the header to midnight when the theme switch button is clicked
-    document.querySelector('header').style.backgroundColor = "white";
+    document.querySelector('.main').style.backgroundColor = "white";
 
-    document.querySelector('.company-info-container .company-name ').style.color = "black";
-
-    document.querySelector('.company-site').style.color = "var(--light-voilet)";
-    document.querySelector('.company-site').style.backgroundColor = "var(--light-grey)";
-
-    document.querySelector('.document').style.backgroundColor = "white";
-    document.querySelector('.document').style.color = "black";
+    document.querySelector('.main').style.backgroundColor = "white";
+    document.querySelector('.main').style.color = "black";
 
     document.querySelector('.time-info').style.color = "var(--light-voilet)";
 

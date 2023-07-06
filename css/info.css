@@ -181,7 +181,7 @@
     font-weight: 600;
   }
   
-  .document {
+  .main {
     margin-top: 35px;
     background: var(--white);
     padding: 45px;
@@ -221,12 +221,12 @@
     font-weight: bold;
   }
   
-  .document .header {
+  .main .header {
     display: flex;
     justify-content: space-between;
   }
   
-  .document .btn {
+  .main .btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,14 +328,14 @@
       top: -25px;
     }
   
-    .document .header {
+    .main .header {
       display: flex;
       flex-direction: column;
       font-size: 0.7rem;
       gap: 50px;
     }
   
-    .document {
+    .main {
       padding: 20px;
     }
     footer .footer-section {

@@ -129,6 +129,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
   }
   
   .search img,
@@ -180,6 +181,7 @@
   }
   .search-btn:hover {
     background-color: var(--gray);
+    cursor: pointer;
   }
   
   .search-btn .icon {

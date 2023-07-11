@@ -32,6 +32,12 @@ theme_switch.addEventListener("click", (e) => {
 
     document.querySelector('h4').style.color = "white";
 
+    //header
+    document.querySelector(".hero-inner .rest").style.backgroundColor="var(--midnight)"
+    document.querySelectorAll(".hero-inner .rest").forEach(e => {
+      e.style.color = "white"
+    })
+    document.querySelector(".csite").style.backgroundColor = "var(--very-dark-blue)"
     
 
 
@@ -62,6 +68,12 @@ theme_switch.addEventListener("click", (e) => {
 
     document.querySelector('h4').style.color = "black";
 
+        //header
+        document.querySelector(".hero-inner .rest").style.backgroundColor="var(--white)"
+        document.querySelectorAll(".hero-inner .rest").forEach(e => {
+          e.style.color = "black"
+        })
+        document.querySelector(".csite").style.backgroundColor = "var(--light-grey)"
 
     themeState = 1;
   }

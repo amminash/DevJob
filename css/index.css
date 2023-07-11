@@ -162,15 +162,16 @@
     -webkit-appearance: none; /* Remove default appearance */
     -moz-appearance: none;
     appearance: none;
-    background-color: var(--gray);
+    background-color: var(--light-grey);
     width: 18px;
     height: 18px;
     outline: none;
     border: none;
+    cursor: pointer;
   }
   .full-time input[type="checkbox"]:checked,
   .filter-popUp input[type="checkbox"]:checked {
-    background-color: var(--light-grey);
+    background-color: var(--light-voilet);
   }
   .search-btn {
     background-color: var(--light-voilet);

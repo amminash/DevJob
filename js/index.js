@@ -29,6 +29,7 @@ theme_switch.addEventListener("click", (e) => {
       document.querySelectorAll(".job-type").forEach((element) => {
         element.style.color = "var(--light-grey)";
       });
+      
     });
     // Changing the color of the job type
     themeState = 2;
@@ -64,12 +65,12 @@ theme_switch.addEventListener("click", (e) => {
 });
 
 // setting the borders of the inputs to none when they are clicked on
-document.querySelectorAll("input").forEach((element) => {
-  element.addEventListener("focus", () => {
-    element.style.border = "none";
-    element.style.outline = "none";
-  });
-});
+// document.querySelectorAll("input").forEach((element) => {
+//   element.addEventListener("focus", () => {
+//     element.style.border = "none";
+//     element.style.outline = "none";
+//   });
+// });
 
 // Popping the check button when the checkBox is clicked
 let check = document.querySelector(".full-time .check");
@@ -77,6 +78,7 @@ document.getElementById("full-time").addEventListener("click", () => {
   check.style.visibility = "visible";
   check.style.color = "var(--light-voilet)";
 });
+
 check.addEventListener("click", (e) => {
   e.preventDefault();
   check.style.visibility = "hidden";
